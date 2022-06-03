@@ -1,0 +1,45 @@
+popsize: This variable stores the population size (a multiple of 4) : 100
+ngen: Number of generations					    : 100
+nobj: Number of objectives					    : 2
+ncon: Number of constraints					    : 0
+nreal: Number of real variables					    : 8
+min_realvar[i]: minimum value of i^{th} real variable		    : min max of 8 vars
+max_realvar[i]: maximum value of i^{th} real variable		    : This will go for n number of variables
+pcross_real: probability of crossover of real variable		    : 0.9
+pmut_real: probability of mutation of real variable		    : 0.2
+eta_c: distribution index for real variable SBX crossover	    : 10           
+eta_m: distribution index for real variable polynomial mutation     : 10
+nbin: number of binary variables				    : 0
+choice								    : 1 //for plotting realtime GNU plot
+Enter the objective for X axis display				    : 1
+Enter the objective for Y axis display				    : 2
+
+
+To execute:
+
+$ ./nsga2r <input_data/irdrop.in .5
+
+Last running instance(21-Nov-2017, 11:50pm) for a single node of power grid with four neighbours:
+
+$ ./nsga2r <input_data/irdrop3.in .5
+
+
+Last running instance(26-Nov-2017, 6:37pm) for a single node of power grid with four neighbours:
+
+$ ./nsga2r <input_IR_data/irdrop_new1 .5
+
+
+Last running instance(2-Jan-2018, 2:04AM) for a subcircuit/single node of power grid network with four neighbours:
+$ ./nsga2r <input_IR_data/irdrop_new_ibmpg .5
+
+
+Last running instance(3-Jan-2018, 9:56PM) for a subcircuit of ibmpg1 with three neighbours problem instance #define ir_drop4 with three constraints:
+$ ./nsga2r <input_IR_data/irdrop4_ibmpg1_subcircuit2 .5
+
+Data Added in ACM TODAES PAPER also for APS1 report for the following running instance: (executed on 10th Jan 2018, 2:48 AM)
+
+$ ./nsga2r <input_IR_data/subcircuit1_ibmpg1 .5
+
+
+content of the file input_IR_data/subcircuit1_ibmpg1 is:
+100 100 0 1 1 2 4 10 50 10 80 .006 .015 .01 .02
